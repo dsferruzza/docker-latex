@@ -1,4 +1,4 @@
-Docker-LaTeX
+docker-latex
 ============
 
 A Debian image with LaTeX tools installed
