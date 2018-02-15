@@ -9,6 +9,7 @@ RUN apt-get update \
  && apt-get install --no-install-recommends -y \
  texlive-full \
  biber \
+ curl \
 # Remove documentation packages
  && apt-get --purge -y remove \
  texlive-fonts-extra-doc \
