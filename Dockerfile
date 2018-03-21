@@ -23,9 +23,9 @@ RUN apt-get update \
  texlive-pstricks-doc \
  texlive-publishers-doc \
  texlive-science-doc \
-# Get the latest latexmk
- && curl -Ls http://mirrors.ctan.org/support/latexmk/latexmk.pl -o /usr/local/bin/latexmk \
- && chmod +x /usr/local/bin/latexmk \
 # Slim down image
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/man/?? /usr/share/man/??_*
+
+# Add the latest latexmk
+COPY latexmk /usr/local/bin/
