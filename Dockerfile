@@ -1,4 +1,4 @@
-FROM debian:9
+FROM debian:sid-slim
 MAINTAINER David Sferruzza <david.sferruzza@gmail.com>
 
 # Let the conatiner know that there is no tty
