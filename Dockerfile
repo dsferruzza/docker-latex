@@ -10,6 +10,7 @@ RUN apt-get update \
  texlive-full \
  biber \
  curl \
+ python3-pygments \
 # Remove documentation packages
  && apt-get --purge -y remove \
  texlive-fonts-extra-doc \
