@@ -25,7 +25,7 @@ RUN apt-get update \
  texlive-science-doc \
 # Add Pygments
  && apt-get install --no-install-recommends -y python3-pip \
- && pip install Pygments \
+ && pip3 install Pygments \
 # Slim down image
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/man/?? /usr/share/man/??_*
